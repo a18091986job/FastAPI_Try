@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.py",
+      "src": "api/index.py",  // Точный путь к файлу функции
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "api/index.py"
+      "src": "/(.*)",        // Все запросы
+      "dest": "api/index.py" // Направляются в файл функции
     }
   ]
 }
